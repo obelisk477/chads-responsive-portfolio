@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #393E41;
+    /* Color palette:
+    Old gold: #E2C044
+    Eerie black: #1E2019 */
+    color: #F6F5F4;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header, main {
+    padding: 0 35px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #587B7F;  
+}
+
+header nav {
+    display: flex;      
+}
+
+
+header li {
+    display: inline;
+    margin: 35px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+header a {
+    text-decoration: none;
+    color: #F6F5F4;
+}
