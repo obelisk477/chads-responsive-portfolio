@@ -34,13 +34,13 @@ header nav {
 header li {
     display: inline;
     margin: 25px;
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 header li:hover {
     border-bottom: 4px solid #E2C044;
-    transition: 0.3s;
+    transition: 0.2s;
 
 }
 header li:hover a {
@@ -57,7 +57,7 @@ header a {
     background-image: url("./18674259.jpg");
     margin: 0;
     opacity: .2;
-    height: 100px;
+    height: 125px;
 }
 
 h2 {
@@ -97,7 +97,7 @@ section p, section div {
 }
 
 .tile, .tile-large {
-    min-width: 35%;
+    min-width: 500px;
     background-color: #587B7F;
     margin: 10px;
     position: relative;
@@ -118,7 +118,7 @@ section p, section div {
 .tile::before, .tile-large::before {    
     content: "";
     background-image: url("./18674259.jpg");
-    background-size:auto;
+    background-size:cover;
     position: absolute;
     top: 0px;
     right: 0px;
