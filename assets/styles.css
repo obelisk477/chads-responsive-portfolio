@@ -1,15 +1,23 @@
 body {
     margin: 0;
     background-color: #393E41;
-    /* Color palette:
-    Old gold: #E2C044
-    Eerie black: #1E2019 */
+    /* Eerie black: #1E2019 */
     color: #F6F5F4;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header, main {
-    padding: 0 35px;
+    margin: 0;
+}
+
+h1 {
+    padding: 15px;
+    background-color: #393E41;
+    font-size: 2.75rem;
+}
+
+main {
+    position: relative;
 }
 
 header {
@@ -23,15 +31,109 @@ header nav {
     display: flex;      
 }
 
-
 header li {
     display: inline;
-    margin: 35px;
+    margin: 25px;
     font-size: 22px;
     font-weight: 500;
+}
+
+header li:hover {
+    border-bottom: 4px solid #E2C044;
+    transition: 0.3s;
+
+}
+header li:hover a {
+    color: #E2C044;
+    transition: 0.3s;
 }
 
 header a {
     text-decoration: none;
     color: #F6F5F4;
+}
+
+.hero-bg {
+    background-image: url("./18674259.jpg");
+    margin: 0;
+    opacity: .2;
+    height: 100px;
+}
+
+h2 {
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    font-size: 44px
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section h3 {
+    font-size: 2.5rem;
+    width: 17%;
+    padding-left: 30px;
+}
+
+section p {
+    margin: 10px;
+}
+
+section p, section div {
+    flex: 5;
+}
+
+.project-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    border-left: 4px solid #587B7F;
+    padding: 0 20px;
+}
+
+.tile, .tile-large {
+    min-width: 35%;
+    background-color: #587B7F;
+    margin: 10px;
+    position: relative;
+    border: solid 4px #E2C044;
+    flex: 1;
+}
+
+.tile:hover, .tile-large:hover {
+    box-shadow: 0px 0px 10px 5px  #E2C044;
+    transition: 0.2s;
+
+}
+
+.tile-large {
+    flex: 1 100%;
+}
+
+.tile::before, .tile-large::before {    
+    content: "";
+    background-image: url("./18674259.jpg");
+    background-size:auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.35;
+}
+
+h4 { 
+    position: relative;
+    color: #ffffff;  
+    font-size: 1.5rem;
+    line-height: 0.9;
+    background-color: #E2C044;
+    width: fit-content;
+    margin-top: 20%;
+    padding: 60px 15px;
 }
