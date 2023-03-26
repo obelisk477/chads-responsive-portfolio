@@ -15,10 +15,11 @@ header, main {
     margin: 0;
 }
 
-h1 {
+header h1 {
     padding: 30px;
     background-color: #393E41;
     font-size: 2.75rem;
+    margin: 0;
 }
 
 main {
@@ -32,8 +33,21 @@ header {
     background-color: #587B7F;  
 }
 
-header nav {
+header nav, header div {
     display: flex;      
+    align-items: center;
+}
+
+header div img {
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+header div {
+    background-color: #393E41;
+    margin: 20px 0;
+    padding: 15px 0;
 }
 
 header li {
@@ -77,18 +91,28 @@ h2 {
 section {
     display: flex;
     align-items: center;
+    margin-top: 30px;
     min-height: 200px;
 }
 
 section h3 {
     font-size: 2.5rem;
     width: 21%;
-    padding-left: 30px;
+    padding-right: 40px;
+    text-align: right;
+}
+section p {
+    padding: 0 30px;
+    border-left: 4px solid #587B7F;
+}
+section ul {
+    padding: 0 30px;
+    border-left: 4px solid #587B7F;
 }
 
 section p, section > div, section ul {
     flex: 5;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .project-tiles {
@@ -137,6 +161,16 @@ section p, section > div, section ul {
     opacity: 0.35;
 }
 
+#tile-1::before {
+    background-image: url("./LeetCode.png");
+}
+
+#tile-4::before {
+    background-image: url("./ZBLS.png");
+}
+
+
+
 .first-tile::before {
     background-image: url("./Screenshot\ 2023-03-25\ 224254.png");
 }
@@ -148,13 +182,12 @@ a > div {
     line-height: 0.1;
     background-color: #E2C044;
     width: fit-content;
-    padding: 0 1% 3% 1%;
+    padding: 0 4% 5% 1%;
     display: block;
 }
 
 code {
     font-size: 1.25rem;
-    
 }
 
 .contact-me > ul {
@@ -162,9 +195,27 @@ code {
     list-style: none;
     width: 100%;
     justify-content: space-around;
+    padding: 20px;
 }
 
 .contact-me li {
     padding: 5px;
-    border-bottom: 4px solid #fff;
+    text-decoration: none;
+
+
+}
+
+.contact-me li a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-me li:hover a {
+    color: #E2C044;
+    transition: 0.2s;
+    text-decoration: none;
+
+}
+.contact-me li:hover a {
+    border-bottom: 4px solid #E2C044;
 }
