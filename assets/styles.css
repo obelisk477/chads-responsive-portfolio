@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    background: linear-gradient(#393E41, #1E2019);
+    background: linear-gradient(#c2c2c2, #ffffff);
     /* Eerie black: #1E2019 */
-    color: #F6F5F4;
+    color: #383838;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -17,7 +17,7 @@ header, main {
 
 header h1 {
     padding: 30px;
-    background-color: #393E41;
+    background-color: #c2c2c2;
     font-size: 2.75rem;
     margin: 0;
 }
@@ -30,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #587B7F;  
+    background-color: #2a3e5c;  
 }
 
 header nav, header div {
@@ -45,9 +45,10 @@ header div img {
 }
 
 header div {
-    background-color: #393E41;
+    background-color: #c2c2c2;
     margin: 20px 0;
     padding: 15px 0;
+    border-radius: 0px 14px 14px 0px;
 }
 
 header li {
@@ -69,23 +70,24 @@ header li:hover a {
 
 header a {
     text-decoration: none;
-    color: #F6F5F4;
+    color: #c2c2c2;
 }
 
 .hero-bg {
     background-image: url("./18674259.jpg");
     margin: 0;
     opacity: .2;
-    height: 125px;
+    height: 80px;
 }
 
 h2 {
     margin: 0;
     opacity: 1;
     position: absolute;
-    top: 45px;
+    top: 20px;
     right: 50px;
-    font-size: 44px
+    font-size: 36px;
+    color: #2a3e5c
 }
 
 section {
@@ -103,11 +105,11 @@ section h3 {
 }
 section p {
     padding: 0 30px;
-    border-left: 4px solid #587B7F;
+    border-left: 4px solid #73a391;
 }
 section ul {
     padding: 0 30px;
-    border-left: 4px solid #587B7F;
+    border-left: 4px solid #73a391;
 }
 
 section p, section > div, section ul {
@@ -119,8 +121,8 @@ section p, section > div, section ul {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    border-left: 4px solid #587B7F;
-    padding: 0 20px;
+    border-left: 4px solid #73a391;
+    padding: 0 20px 20px 20px;
 }
 
 .tile {
@@ -133,14 +135,14 @@ section p, section > div, section ul {
     background-color: #587B7F;
     margin: 10px;
     position: relative;
-    border: solid 5px #E2C044;
+    border: solid 5px #2a3e5c;
     flex: 1;
     display: flex;
     align-items: center;
 }
 
 .tile:hover, .first-tile:hover {
-    box-shadow: 0px 0px 10px 5px  #E2C044;
+    box-shadow: 0px 0px 10px 5px  #2a3e5c;
     transition: 0.2s;
     opacity: 1;
 }
@@ -169,6 +171,10 @@ section p, section > div, section ul {
     background-image: url("./ZBLS.png");
 }
 
+#tile-3::before {
+    background-image: url("./PreWork.png");
+}
+
 
 
 .first-tile::before {
@@ -180,14 +186,21 @@ a > div {
     color: #ffffff;  
     font-size: 1.5rem;
     line-height: 0.1;
-    background-color: #E2C044;
-    width: fit-content;
+    background-color: #2a3e5c;
+    width: 200px;
     padding: 0 4% 5% 1%;
     display: block;
+    border-radius: 0px 14px 14px 0px;    
 }
 
 code {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+}
+
+.contact-me {
+    background-color: #2a3e5c;
+    color: #fff;
+    margin-top: 60px
 }
 
 .contact-me > ul {
@@ -207,7 +220,7 @@ code {
 
 .contact-me li a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 .contact-me li:hover a {
@@ -218,4 +231,25 @@ code {
 }
 .contact-me li:hover a {
     border-bottom: 4px solid #E2C044;
+}
+
+@media  (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    section h3 {
+        width: 37%;
+        padding: 0;
+        text-align: center;
+        border-bottom: 4px solid #73a391;
+    }
+
+    .contact-me > ul {
+        flex-direction: column;
+    }
+    
+    section p, section ul, .project-tiles {
+        border-left: none;
+    }
 }
