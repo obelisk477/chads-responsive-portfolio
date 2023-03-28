@@ -1,6 +1,5 @@
 /* All document styles */
 body {
-    margin: 0;
     background: linear-gradient(#c2c2c2, #ffffff);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -9,7 +8,7 @@ a {
     text-decoration: none;
 }
 
-header, main {
+.no-margin {
     margin: 0;
 }
 
@@ -29,7 +28,6 @@ header h1 {
     padding: 30px;
     background-color: #c2c2c2;
     font-size: 2.75rem;
-    margin: 0;
 }
 
 header div img {
@@ -77,13 +75,11 @@ main {
 
 .hero-bg {
     background-image: url("./18674259.jpg");
-    margin: 0;
     opacity: .2;
     height: 80px;
 }
 
 h2 {
-    margin: 0;
     opacity: 1;
     position: absolute;
     top: 20px;
@@ -92,25 +88,27 @@ h2 {
     color: #2a3e5c
 }
 
-section {
+section, footer {
     align-items: center;
     margin-top: 30px;
     min-height: 200px;
 }
 
-section h3 {
+section h3, footer h3 {
     font-size: 2.5rem;
     width: 21%;
     padding-right: 40px;
     text-align: right;
 }
 
-section p, section ul {
+section p, section ul,
+footer ul {
     padding: 0 30px;
     border-left: 4px solid #73a391;
 }
 
-section p, section > div, section ul {
+section p, section > div, section ul,
+footer ul {
     flex: 5;
     font-size: 1.1rem;
 }
@@ -132,17 +130,21 @@ section p, section > div, section ul {
 .tile, .first-tile {
     min-width: 500px;
     min-height: 200px;
-    background-color: #587B7F;
+    background-color: #73a391;
     margin: 10px;
     position: relative;
     border: solid 5px #2a3e5c;
     align-items: center;
 }
 
-.tile:hover, .first-tile:hover {
+.tile:hover::before, .first-tile:hover::before {
     box-shadow: 0px 0px 10px 5px  #2a3e5c;
     transition: 0.2s;
-    opacity: 1;
+    opacity: 0.8;
+}
+
+.tile:hover, .first-tile:hover {
+    box-shadow: 0px 0px 10px 5px  #2a3e5c;
 }
 
 .tile::before, .first-tile::before {    
@@ -214,21 +216,22 @@ code {
 
 /* Media queries */
 
-@media  (max-width: 768px) {
+@media  (max-width: 781px) {
     header {
         flex-direction: column;
-
     }
     
     header h1 {
         height: 40px;
         padding: 0;
         margin: 0 auto;
+        padding-left: 30px;
     }
 
     header ul {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin: 0;
         padding: 0;
     }
@@ -251,24 +254,28 @@ code {
         right: 35%    
     }
 
-    section {
+    section, footer {
         flex-direction: column;
         align-items:flex-start;
     }
 
-    section h3 {
+    section h3, footer h3 {
         width: 84%;
         margin: 0 30px;
         text-align: left;
         border-bottom: 4px solid #73a391;
-        
     }
 
     .contact-me > ul {
         flex-direction: column;
     }
     
-    section p, section ul, .project-tiles {
+    section p, section ul, .project-tiles,
+    footer ul {
         border-left: none;
+    }
+
+    #contact-me {
+        padding-top: 10px;
     }
 }

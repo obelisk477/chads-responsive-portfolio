@@ -11,7 +11,7 @@ Visit https://obelisk477.github.io/week-01-homework/ and navigate the page as yo
 
 ## Credits
 
-Starter code provided by edX Boot Camps LLC
+Idea and some code for pseudo elements (CSS line 148) came from https://coder-coder.com/background-image-opacity/#:~:text=To%20fix%20this%20issue%2C%20we,opacity%20without%20affecting%20each%20other!
 
 ## License
 
