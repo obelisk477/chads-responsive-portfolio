@@ -216,7 +216,7 @@ code {
 
 /* Media queries */
 
-@media  (max-width: 781px) {
+@media screen and (max-width: 781px) {
     header {
         flex-direction: column;
     }
@@ -277,5 +277,15 @@ code {
 
     #contact-me {
         padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 560) {
+    .project-tiles > * {
+        min-width: none;
+    }
+
+    header {
+        width: 100%
     }
 }
