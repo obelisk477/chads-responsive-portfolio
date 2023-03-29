@@ -74,7 +74,7 @@ main {
 }
 
 .hero-bg {
-    background-image: url("./18674259.jpg");
+    background-image: url("./images/18674259.jpg");
     opacity: .2;
     height: 80px;
 }
@@ -124,7 +124,7 @@ footer ul {
 }
 
 .first-tile::before {
-    background-image: url("./Screenshot\ 2023-03-25\ 224254.png");
+    background-image: url("./images/Screenshot\ 2023-03-25\ 224254.png");
 }
 
 .tile, .first-tile {
@@ -164,19 +164,19 @@ footer ul {
 }
 
 #tile-1::before {
-    background-image: url("./LeetCode.png");
+    background-image: url("./images/LeetCode.png");
 }
 
 #tile-2::before {
-    background-image: url("./18674259.jpg");
+    background-image: url("./images/18674259.jpg");
 }
 
 #tile-3::before {
-    background-image: url("./PreWork.png");
+    background-image: url("./images/PreWork.png");
 }
 
 #tile-4::before {
-    background-image: url("./ZBLS.png");
+    background-image: url("./images/ZBLS.png");
 }
 
 a > div { 
