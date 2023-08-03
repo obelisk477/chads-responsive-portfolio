@@ -1,4 +1,4 @@
-# Homework / Module 02
+# Chad's Responsive Portfolio / Module 02
 
 ## Description
 
